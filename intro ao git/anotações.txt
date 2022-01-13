@@ -1,0 +1,18 @@
+Abrir o Git Bash onde irá trabalhar
+
+Comandos iniciais:
+
+mkdir "nome-do-diretório" - criar um diretório de trabalho
+ls - listar os diretórios existentes
+ctrl + l - limpa o cmd do git bash
+cd "caminho" - acessa um diretório
+cd .. - volta um diretório
+
+Comandos básicos:
+
+git init - inicializar
+git clone "link" - clonar de um repositório remoto para o local
+git add * - adicionar todos os arquivos para staged
+git commit -m "descição" - criar o commit/atualização do diretório
+git push origin master - empurrar do repositório local para o remoto
+git status - mostra o estado dos arquivos
