@@ -14,5 +14,6 @@ git init - inicializar
 git clone "link" - clonar de um repositório remoto para o local
 git add * - adicionar todos os arquivos para staged
 git commit -m "descição" - criar o commit/atualização do diretório
+git remote add origin "link" - vincula repositorio local ao remoto
 git push origin master - empurrar do repositório local para o remoto
 git status - mostra o estado dos arquivos
