@@ -1,0 +1,178 @@
+C# e .NET
+
+Framework - é um conjunto de códigos prontos que facilita o 
+	desenvolvimento com bibliotecas
+.NET - é um framework da Microsoft que permite a comunicação entre
+	linguagens de programações diferentes
+		Visual Basic, C++, F# e C#
+C# - linguagem orientada a objetos e tipada com sintaxe baseada em C++ 
+	e influências de Object Pascal e Java
+
+Visual Studio 
+Solução - é um conteiner para organizar projetos relacionados entre si
+Projeto - é onde será realizado o trabalho de desenvolvimento
+Programa - é o arquivo de edição de texto na linguagem determinada
+
+Estruturas C#
+no início do projeto usa-se 'using' para incluir os namespaces que 
+	contém as classes que serão utilizadas
+Namespace ("funções") - organiza e permite que acessemos as classes
+	
+Classe ('struct') - é composta por 'membros', contendo campos, propriedades, 
+	métodos e eventos
+Objeto ('variável do tipo struct') - é uma classe intanciada com valores 
+	atribuídos aos seus respectivos campos
+Interface - classe base que é molde para outras classes
+Enum - declara um conjunto de constantes que contém index iniciando em 0
+	e aumentando de 1 em 1.
+static void - equivalente a int main, é o lugar que tem os comandos 
+	que o programa irá executar
+
+Debugging 
+Depuração - feita com breakpoint no canto esquerdo ou F9 + run
+	Serve para identificar quais os valores das variáveis 
+		no momento da inspeção
+	As váriaveis até a linha do breakpoint serão executadas, após
+		isso os valores serão null porque as linhas ainda não
+		terão sido executadas. 
+	Para continuar executando, F10 executa linha por linha após o
+		breakpoint. Para executar tudo, F5.
+
+Primeiros passos com .Net
+
+.Net - faz parte da história da Microsoft
+	é um infraestrutura para desenvolvimento de software
+CLR - uma linguagem intermediária que permitia que a plataforma pudesse
+	interpretar códigos de várias linguagens diferentes para
+	linguagem de máquina
+CLI DotNet
+dotnet --version: versão 
+dotnet --help: comandos de aplicações
+dotnet new: criar novo projeto
+dotnet nuget: criar pacotespara disponibilizar os projetos
+dotnet publish
+dotnet test: roda testes para a aplicação
+dotnet tool: instala e gerencia ferramentas para dotnet
+dotnet run: constrói e roda o projeto
+
+Aplicação CONSOLE - é que será criado por meio de um terminal
+dotnet new console: cria uma nova aplicação console
+code . : abre o conteúdo da pasta no visual code
+dotnet restore: restaura/baixa/instala os pacotes 
+dotnet build: restaura os pacotes, compila e gera o binário do código
+
+LINGUAGEM C#
+executada em .NET (CLR e bibliotecas), compilador Roslyn
+código-fonte compilado em linguagem intermediária (dotnet build)
+código e recursos IL armazenadas em executáveis assembly (.exe/.dll)
+quando é executado, o executável é carregado no CLR
+	e aí acontece a compilação just in time (JIT) para converter
+	código IL em linguagem de máquina
+serviços do CLR: garbage colletor, exception handler, resources Manager
+
+Estrutura de Programa
+programas > namespaces > tipos > membros > assemblies
+programas consistem em um ou mais arquivos
+	declaram tipos, que contêm membros e podem ser organizados em namespaces
+tipos: classes e interfaces
+membros: campos, métodos, propriedades e eventos
+programa compilado -> assembly (.exe/.dll)
+
+Tipos de valor - quando são criadas o espaço separado para ela contém os dados que
+	lhe são atribuídas. Tem uma própria cópia de dados.
+	numéricos: sbyte, short, int, long, byte, ushort, uint, ulong
+	unicore: char
+	pontos flutuantes: float, double, decimal
+	booleano: bool
+	enum, struct, nullable 
+Tipos de referência - variáveis que contém referência para os valores que estão
+	armazenados em outros espaços da memória
+	classe: class, object, string
+	arrays: int[], int[,], etc
+	interface, delegate
+Instruções - ações expressas por comandos dentro de um bloco delimitado por  chaves
+	declaração de variáveis, 
+	condicionais (if, switch), 
+	repetição (while, do, for, foreach)
+	auxiliares (break, continue, return), 
+	exceção (throw, try..catch..finally) 
+	using - importar referências
+Array - uma estrutura q contém um número X de elementos de um mesmo tipo acessados
+	por índices. Referencia o espaço na memória q contém o dado
+	índices vão de 0 até [tamanho do array-1]
+	matrizes 
+	inicializador de array: cria e preenche no mesmo comando
+	
+Classes e Objetos
+Classes - estrutura de dados que combina estado (campos) e ações (métodos)
+	funciona como declaração do formato de uma estrutura
+Objetos - instâncias de uma classe
+	funciona como a classe com valores atribuídos em tempo de execução
+new - é o operador que cria os objetos, aloca um espaço na memória
+	para inicializar a instância da classe em questão.
+	retorna a referência da instância
+Membros - estático quando pertence à classe e de instância quando pertence ao
+	objeto. é tudo que faz parte do bloco de código da classe
+	acessibilidade - quais regiões do software acessa o membro
+		public - tudo pode acessar
+		protected - apenas classes q herdam da classe base
+		internal - dentro do assembly em questão
+		private - dentro da classe em questão
+Herança - uma classe base pode gerar filhas, e as filhas herdam tudo que é 
+	public, internal e protected
+	apenas pode-se herdar de uma única classe
+Método - determina as ações que pode ser executada por um objeto ou classe
+	pode ou não receber parâmetros de entradas
+	parâmetros podem ser do tipo valor ou referência
+	pode ou não retornar um resultado
+	boa prática - nomes de métodos serem verbos
+			nomes de objetos serem substantivos
+
+Orientação a Objeto com C#
+POO - é uma técnica de programação, aproximar o mundo real à programação
+	pilares: abstração, encapsulamento, herança e polimorfismo
+Atributos principais - classe (modelo) e objetos (modelo com atributos definidos)
+Paradigmas - conjunto de regras, técnicas, estruturas e formas de solucionar
+	problemas. A linguagem de programação implementa essas regras, pode
+	implementar mais de um paradigmas.
+	POO - fácil de trabalhar
+	Prog Estruturada, Imperativa, Procedural, Orientada a Eventos, Lógica.
+
+Abstração - entender o mundo real e utilizar o que é necessário para resolver
+	o problema
+~~ Criando a Solução no CMD ~~ 
+		C:\workspace>dotnet new sln --name ExemploPOO
+		O modelo "Arquivo de Solução" foi criado com êxito.
+
+		C:\workspace>mkdir ExemploPOO
+
+		C:\workspace>cd ExemploPOO
+
+		C:\workspace\ExemploPOO>dotnet new console
+		O modelo "Aplicativo do Console" foi criado com êxito.
+
+		Processando ações pós-criação...
+		Executando 'dotnet restore' em C:\workspace\ExemploPOO\ExemploPOO.csproj...
+		  Determinando os projetos a serem restaurados...
+		  C:\workspace\ExemploPOO\ExemploPOO.csproj restaurado (em 464 ms).
+		A restauração foi bem-sucedida.
+
+
+		C:\workspace\ExemploPOO>cd ..
+
+		C:\workspace>dotnet sln add ExemploPOO/ExemploPOO.csproj
+		O projeto 'ExemploPOO\ExemploPOO.csproj' foi adicionado à solução.
+
+		C:\workspace>code .
+
+Encapsulamento - proteger a classe e definir limites para alteração de atributos
+	oculta o comportamento e expõe somente o necessário
+	public - libera geral
+	private - restringe geral
+	
+Herança - reutilizar atributos, métodos e comportamentos de uma classe em outras
+	agrupa objetos q são do mesmo tipo com características diferentes
+Polimorfismo - sobrescrever métodos das classes filhas para que se comportem
+	de maneira diferente e ter sua própria implementação
+
+
