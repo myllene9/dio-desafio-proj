@@ -232,3 +232,18 @@ Eventos - mecanismo de comunicação entre objetos
 	subscriber - quem recebe o retorno da ação do evento
 	precisa de um delegate
 
+~~ AMBIENTE DE DESENVOLVIMENTO ~~
+.NET framework - 2002 para windows e web
+2013 - servidores, em nuvem, em linux
+.NET Core (multiplataforma) - 2016 para windows, web, linux, macOS
+duas ferramentas diferentes
+.NET Standard - contrato para biblioteca de classe base, mesma sintaxe
+.NET 5 - 2020, plataforma unificada para todos os sistemas operacionais
+	e todos os tipos de ferramentas
+
+Framework - caixa de ferramentas prontas
+	permite a adaptação de acordo com a aplicação a partir de componentes
+Runtime - transforma o código em linguagem binária CLR
+	é o compilador a partir da compilação da linguagem de programação
+		até a linguagem de máquina
+
