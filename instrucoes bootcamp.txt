@@ -174,5 +174,61 @@ Herança - reutilizar atributos, métodos e comportamentos de uma classe em outr
 	agrupa objetos q são do mesmo tipo com características diferentes
 Polimorfismo - sobrescrever métodos das classes filhas para que se comportem
 	de maneira diferente e ter sua própria implementação
+	Em tempo de compilação: mesmo nome e assinatura, mas entradas diferentes
+		na classe há mais de um método q é escolhido no Program qual será usado
+	Em tempo de Excecução: método sobrescrito (override)
+		na classe pai o método é virtual
+		na classe filha o método é override
 
+Classes abstratas - não pode ser instanciada, é exclusiva para heranças
+	métodos abstratos é obrigatoriamente para ser definido por quem herdá-la
+Classe selada - tem objetivo de impedir que tenham classes filhas (sealed)
+	é o ponto final da herança
+	método selado - o método não é possível de ser sobrescrito
+
+Classe System.Object - mãe de todas as classes, topo da hierarquia
+	serviços de baixo nível, conceitos de referência de memória
+
+Interface - contrato que pode ser implementado por uma classe
+	não pode ser instanciada, define-se os métodos e a classe que a implementar
+	deve sobrescrever os métodos
+	Uma interface não pode ser implementada mais de uma vez
+	Mas uma classe pode implementar mais de uma interface
+	A classe que implementa uma interface deve seguir os métodos
+
+Arquivos 
+classes estáticas (não se instacia, apenas importa a biblioteca) a serem utilizadas
+	file - manipular arquivos
+	directory - operações com diretórios
+	path - organizar caminhos de maneira lógica
+	Directory.Delete - apaga de verdade
+	
+
+Contrutores - é um método que permite passar valores padrão pra uma classe,
+	limitar uma instância e facilitar a instanciação
+	não possui retorno
+	toda classe tem um construtor padrão (sem parâmetros)
+	uma classe pode ter mais de um construtor
+	- construtor privado: não consegue ser acessado diretamente
+	- uma uma classe herda de outra o construtor também é herdado
+
+Get e Set - atribuir um valor em uma variável de maneira controlada e com
+	validações
+	get: recebe valores
+	set: valida os valores antes de atribuir os valores nas classes
+Propriedade - unifica o get e set. 
+	Pode modificar os getters e setters das propriedades
+
+Modificadores - maneiras de modificar um construtor
+Readonly - bloqueia um campo contra alterações 
+	exceto inicialização ou pelo construtor
+Constante (const) - valor atribuído apenas uma vez na inicialização
+	não permite alterações de valores
+Delegate  - maneira de passar um método como referência
+Multi Cast Delegate - chamar vários métodos de uma só vez
+Eventos - mecanismo de comunicação entre objetos
+	uma coisa acontece quando outra ação acontece
+	publisher - quem será chamado para realizar a ação do evento
+	subscriber - quem recebe o retorno da ação do evento
+	precisa de um delegate
 
