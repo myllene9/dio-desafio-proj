@@ -1,0 +1,15 @@
+C:\workspace\dio-desafio-proj\ProjetoBiblioteca\Bibliotech\obj\Debug\net6.0\Bibliotech.csproj.AssemblyReference.cache
+C:\workspace\dio-desafio-proj\ProjetoBiblioteca\Bibliotech\obj\Debug\net6.0\Bibliotech.GeneratedMSBuildEditorConfig.editorconfig
+C:\workspace\dio-desafio-proj\ProjetoBiblioteca\Bibliotech\obj\Debug\net6.0\Bibliotech.AssemblyInfoInputs.cache
+C:\workspace\dio-desafio-proj\ProjetoBiblioteca\Bibliotech\obj\Debug\net6.0\Bibliotech.AssemblyInfo.cs
+C:\workspace\dio-desafio-proj\ProjetoBiblioteca\Bibliotech\obj\Debug\net6.0\Bibliotech.csproj.CoreCompileInputs.cache
+C:\workspace\dio-desafio-proj\ProjetoBiblioteca\Bibliotech\bin\Debug\net6.0\Bibliotech.exe
+C:\workspace\dio-desafio-proj\ProjetoBiblioteca\Bibliotech\bin\Debug\net6.0\Bibliotech.deps.json
+C:\workspace\dio-desafio-proj\ProjetoBiblioteca\Bibliotech\bin\Debug\net6.0\Bibliotech.runtimeconfig.json
+C:\workspace\dio-desafio-proj\ProjetoBiblioteca\Bibliotech\bin\Debug\net6.0\Bibliotech.dll
+C:\workspace\dio-desafio-proj\ProjetoBiblioteca\Bibliotech\bin\Debug\net6.0\ref\Bibliotech.dll
+C:\workspace\dio-desafio-proj\ProjetoBiblioteca\Bibliotech\bin\Debug\net6.0\Bibliotech.pdb
+C:\workspace\dio-desafio-proj\ProjetoBiblioteca\Bibliotech\obj\Debug\net6.0\Bibliotech.dll
+C:\workspace\dio-desafio-proj\ProjetoBiblioteca\Bibliotech\obj\Debug\net6.0\ref\Bibliotech.dll
+C:\workspace\dio-desafio-proj\ProjetoBiblioteca\Bibliotech\obj\Debug\net6.0\Bibliotech.pdb
+C:\workspace\dio-desafio-proj\ProjetoBiblioteca\Bibliotech\obj\Debug\net6.0\Bibliotech.genruntimeconfig.cache
