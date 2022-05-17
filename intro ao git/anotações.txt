@@ -25,7 +25,8 @@ git clone "link" - clonar de um repositório remoto para o local
 git add * - adicionar todos os arquivos para staged
 git commit -m "descição" - criar o commit/atualização do diretório
 git remote add origin "link" - vincula repositorio local ao remoto
-git push origin master - empurrar do repositório local para o remoto
+git push origin master - empurrar alterações do repositório local para o remoto na branch principal
+git pull origin master - puxar alterações do repositório remoto para o local na branch principal
 git status - mostra o estado dos arquivos
 git log - mostra o histórico de versões commitadas
 git diff - mostra diferenças entre as alterações feitas
@@ -45,4 +46,8 @@ mesmo arquivos e mesmas linhas em branches diferentes
 git merge - mostra quais arquivos conflitaram
 resolve manualmente e commita novamente
 
-Ignorar arquivos
+Ignorar arquivos - no início do projeto.
+touch .gitignore - cria o arquivo de pasta de ignorar arquivos
+abre no notepad++ e coloca todos os arquivos, extensões e pastas a serem ignoradas
+versiona o arquivo .gitignore
+gitignore.io - gera o arquivo de acordo com sistema operacionais, IDE
