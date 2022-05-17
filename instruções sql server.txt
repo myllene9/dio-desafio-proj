@@ -1,0 +1,83 @@
+Banco de dados - são informações armazenadas em algum lugar
+	problemática - a falta de sincronização entre dados gerando inconsistência
+
+SGBDs - softwares de padronização do armazenamento dados com interface para ser	
+	manipulada
+	Relacionais - sistemas com confiabilidade, altamente tipados
+	NoSQL - grande quantidade de dados com melhor performance
+
+Cadeia de conexão - Server=localhost\SQLEXPRESS;Database=master;Trusted_Connection=True;
+
+Linhas - registros
+coluna - dados dos registros, com tipo para cada info
+
+Atomicidade - garante que os dados estão corretos na entrada antes de armazenar
+Consistência - todos os bancos de dados serão sincronizados (relacionais)
+
+Na interface (Microsoft SQL Server Management Studio):
+	Consulta - create database "nome"
+	use "nome do banco de dados a ser manipulado"
+	create table "nome" (nome da coluna tipo(tamanho))
+
+int - inteiros
+bigint - inteiros maiores
+varchar(tamanho) - alfanumericos
+char - alfanumericos (salva espaços tbm)
+bit - binarios
+null - aceita nulos
+not null - nao aceita nulos
+float - numericos decimais
+datetime
+
+drop table nome - apaga uma tabela
+
+select * from nomedatabela : para ver a estrutura da tabela
+seleciona a tabela + alt + F1 : mais informações dos campos da tabela
+insert into tabela (colunas) values (valores);
+insert tabela values (valores); - segue a ordem que as colunas estão na tabela
+	update tabela
+	set mudanças
+	where coluna = condição : para fazer update usa-se a cláusula where para
+				selecionar quais células serão alteradas
+			sem 'where' altera-se todas as células da tabela
+delete from tabela where coluna valores : exclui determinados registros
+
+operadores AND e OR para criar condições para select e delete
+NOT negação
+in - em algum valor
+between - entre valores, dentro de um intervalo
+
+Funções - métodos encapsulados com dinâmicas pradrões 
+Recomendação: sempre identificar em quais colunas serão acrescentadas valores
+estrutura: crise when else (um switch case)
+Chave primária - forma de identificar um registro, única por registro
+Chave estrangeira - relaciona uma tabela com outra tabela, sempre será uma cópia
+			de uma chave primária
+	alter table Tabela add constraint nomedaregra tipodaregra (coluna)
+		essa é uma forma de fazer uma coluna existente ser uma 
+		chave primária
+	alter table Tabela add constraint nomedaregra foreign key (colunaorigem) reference tabeladestino(coluna)
+		essa é uma forma de fazer uma chave estrangeira a partir de
+		uma coluna de outra tabela
+
+Normalização 
+	1- nao deve haver grupo de colunas repetidos
+	2- nao deve haver grupo de informação numa mesma propriedade
+		preferir integração entre sistemas e não alterações ns atributos
+		de uma tabela já existente: quanto mais alterações maior o custo
+	3- nao pode haver informações repetidas que dependem da mesma chave primária
+	4- não pode haver informações repetidas que gere mútiplas atualizações
+Identificação das relações entre tabelas
+	1/n - a tabela n recebe a chave da tabela 1
+	n/n - necessidade de uma tabela intermediária com código de ambas tabelas
+
+selecionar mais de uma tabela
+	inner join - todos os registros das tabelas de acordo com a condição
+	left join - todos os registros a esquerda 
+	right join - todos os registros a direita 
+		select * from tabela1 inner join tabela2 on condição
+			se for mais de uma condição usar AND
+	
+	group by nomedascolunas - agrupar colunas
+	order by nomedascolunas - ordenar a exibição
+	

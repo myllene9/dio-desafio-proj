@@ -1,3 +1,11 @@
+untracked - alterações que não está rastreado
+modified - modificações feitas
+staged - alterações prontas e rastreadas
+committed - alterações versionadas
+HEAD - aponta para o commit mais recente no qual se está trabalhando
+branch - linha do tempo/área de trabalho que se está trabalhando
+tag - etiquetas das versões. usa no checkout pra navegar
+
 Abrir o Git Bash onde irá trabalhar
 
 Comandos iniciais:
@@ -10,6 +18,8 @@ cd .. - volta um diretório
 
 Comandos básicos:
 
+git config --global user.name "nome" - configurar global o nome do usuário
+git config --global user.email "email" - configurar global o email
 git init - inicializar
 git clone "link" - clonar de um repositório remoto para o local
 git add * - adicionar todos os arquivos para staged
@@ -17,3 +27,22 @@ git commit -m "descição" - criar o commit/atualização do diretório
 git remote add origin "link" - vincula repositorio local ao remoto
 git push origin master - empurrar do repositório local para o remoto
 git status - mostra o estado dos arquivos
+git log - mostra o histórico de versões commitadas
+git diff - mostra diferenças entre as alterações feitas
+git checkout hash-id-do-commit - navegar entre commits e versões
+git clean -f - remove todos os arquivos modificados que não foram commitados
+git reset --hard HEAD~0 - força todos os arquivos voltar para a última versão commitada
+git checkout hash-do-commit nome-do-arquivo - modifica o arquivo para a versão respectiva ao hash
+git checkout hash-do-commit - modifica todo o projeto para a versão respectiva ao hash
+git revert HEAD~N - desfaz a alteração, indo pra versão N, e cria um commit respectivo
+git tag vN - etiqueta o commit que está com a HEAD
+git branch nome - cria uma branch paralela
+git merge branch-origem - mescla as alterações de uma branch em outra
+
+
+Conflitos
+mesmo arquivos e mesmas linhas em branches diferentes
+git merge - mostra quais arquivos conflitaram
+resolve manualmente e commita novamente
+
+Ignorar arquivos

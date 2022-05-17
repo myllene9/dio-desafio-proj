@@ -247,3 +247,14 @@ Runtime - transforma o código em linguagem binária CLR
 	é o compilador a partir da compilação da linguagem de programação
 		até a linguagem de máquina
 
+~~ COLEÇÕES ~~
+Array - estrutura de dados com tamanho fixo e armazena valores de mesmo tipo
+	tipo[] array = new tipo[tamanho];
+			new tipo[] {valores};
+	não pode modificar o tamanho dele em memória
+	indices: 0 ~ tamanho-1
+	tipo[,] array = new tipo[linhas, colunas];
+
+Classe Array - classe do próprio system
+	métodos: copiar, encontrar um elemento, encontrar índice, 
+		converter tipo, redimensionar

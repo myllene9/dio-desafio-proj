@@ -1,0 +1,15 @@
+C:\workspace\dio-desafio-proj\Coleções\Coleções\bin\Debug\net6.0\Coleções.exe
+C:\workspace\dio-desafio-proj\Coleções\Coleções\bin\Debug\net6.0\Coleções.deps.json
+C:\workspace\dio-desafio-proj\Coleções\Coleções\bin\Debug\net6.0\Coleções.runtimeconfig.json
+C:\workspace\dio-desafio-proj\Coleções\Coleções\bin\Debug\net6.0\Coleções.dll
+C:\workspace\dio-desafio-proj\Coleções\Coleções\bin\Debug\net6.0\ref\Coleções.dll
+C:\workspace\dio-desafio-proj\Coleções\Coleções\bin\Debug\net6.0\Coleções.pdb
+C:\workspace\dio-desafio-proj\Coleções\Coleções\obj\Debug\net6.0\Coleções.csproj.AssemblyReference.cache
+C:\workspace\dio-desafio-proj\Coleções\Coleções\obj\Debug\net6.0\Coleções.GeneratedMSBuildEditorConfig.editorconfig
+C:\workspace\dio-desafio-proj\Coleções\Coleções\obj\Debug\net6.0\Coleções.AssemblyInfoInputs.cache
+C:\workspace\dio-desafio-proj\Coleções\Coleções\obj\Debug\net6.0\Coleções.AssemblyInfo.cs
+C:\workspace\dio-desafio-proj\Coleções\Coleções\obj\Debug\net6.0\Coleções.csproj.CoreCompileInputs.cache
+C:\workspace\dio-desafio-proj\Coleções\Coleções\obj\Debug\net6.0\Coleções.dll
+C:\workspace\dio-desafio-proj\Coleções\Coleções\obj\Debug\net6.0\ref\Coleções.dll
+C:\workspace\dio-desafio-proj\Coleções\Coleções\obj\Debug\net6.0\Coleções.pdb
+C:\workspace\dio-desafio-proj\Coleções\Coleções\obj\Debug\net6.0\Coleções.genruntimeconfig.cache
